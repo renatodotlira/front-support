@@ -1,0 +1,21 @@
+version: "3"
+services:
+  app-front:
+    container_name: app-front
+    build: .
+    ports:
+      - 4200:4200
+    links:
+      - api
+  api-database:
+    image: mongo:3.2.4
+    container_name: api-database
+    ports:
+      - 27017:27017
+    command: --smallfiles
+  api:
+    image: devnato/spring-boot-docker
+    ports:
+      - 8080:8080
+    links:
+      - api-database
