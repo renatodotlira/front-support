@@ -12,14 +12,15 @@ Painel web para visualização de inciddentes
 
 
 Baixe o projeto do repositório
+
 ```
-git clone https://github.com/renatodotlira/api-support.git
+git clone https://github.com/renatodotlira/front-support.git
 ```
 
 Execute o seguinte comando para acessar o diretório do projeto
 
 ```
-cd api-support/
+cd front-support/
 ```
 
 Execute o seguinte comando para criar a imagem docker
@@ -29,6 +30,7 @@ docker build -t app-front .
 ```
 
 > ⚠️ [Antes de seguir, certifique-se de ter seguido todos os passos no projeto do api-support]
+
 Execute o comando `docker-compose up` para criar criar os containers do projeto, serão criados contâiners para frontend, backend e banco de dados mongo.
 
 ```
